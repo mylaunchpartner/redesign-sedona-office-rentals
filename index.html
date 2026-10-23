@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sedona Office &amp; Storage Rentals | M &amp; M Property Management Group (concept redesign)</title>
+<meta name="description" content="Concept redesign by My Launch Partner. Office space and self storage in Sedona, Arizona, managed by M & M Property Management Group.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.sedonaofficerentals.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero-sedona-1400.webp" type="image/webp">
+<style>
+:root{
+  --sand:#F4EDE3; --sand-deep:#E9DECF; --white:#FFFDFA;
+  --terracotta:#B5562F; --terracotta-dark:#94431F;
+  --canyon:#3E5F86; --canyon-dark:#2E4867;
+  --ink:#23211F; --ink-soft:#4A4540; --rule:#D9CDBD;
+  --serif:'Fraunces', Georgia, serif; --sans:'Public Sans', system-ui, sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--canyon)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--terracotta);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{text-wrap:balance;font-family:var(--serif);font-weight:500;line-height:1.12;margin:0;letter-spacing:-0.01em}
+p{margin:0 0 1em}
+
+.concept-bar{background:var(--ink);color:#E9E2D8;font-size:13px;text-align:center;padding:7px 16px}
+.concept-bar a{color:#fff}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,253,250,.96);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--rule)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
+.brand{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;line-height:1.15}
+.brand strong{font-family:var(--serif);font-weight:600;font-size:21px}
+.brand span{font-size:13px;color:var(--ink-soft)}
+.nav{display:flex;align-items:center;gap:22px}
+.nav a{color:var(--ink);text-decoration:none;font-size:15px}
+.nav a:hover{color:var(--terracotta)}
+.btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:15px;text-decoration:none;padding:12px 20px;border-radius:8px;border:1.5px solid transparent;transition:background .15s,color .15s}
+.btn-primary{background:var(--terracotta);color:#fff}
+.btn-primary:hover{background:var(--terracotta-dark)}
+.btn-outline{border-color:var(--canyon);color:var(--canyon);background:transparent}
+.btn-outline:hover{background:var(--canyon);color:#fff}
+.btn-light{border-color:#fff;color:#fff}
+.btn-light:hover{background:#fff;color:var(--ink)}
+.nav .btn{padding:9px 16px;color:#fff}
+.menu{display:none}
+.menu summary{list-style:none;cursor:pointer;font-weight:600;padding:8px 12px;border:1.5px solid var(--ink);border-radius:8px}
+.menu summary::-webkit-details-marker{display:none}
+.menu nav{position:absolute;right:16px;top:64px;background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:10px;display:flex;flex-direction:column;min-width:240px;box-shadow:0 10px 30px rgba(35,33,31,.12)}
+.menu nav a{padding:10px 12px;color:var(--ink);text-decoration:none}
+@media (max-width:980px){.nav{display:none}.menu{display:block}}
+
+/* hero */
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-start;color:#fff;overflow:hidden}
+.hero picture,.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 78%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,36,52,.62) 0%,rgba(24,36,52,.38) 42%,rgba(0,0,0,0) 66%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-top:clamp(56px,9vh,110px);padding-bottom:48px}
+.hero h1{font-size:clamp(40px,6vw,74px);max-width:13ch;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.hero p{text-shadow:0 1px 12px rgba(0,0,0,.45);font-size:clamp(17px,1.6vw,20px);max-width:44ch;margin:20px 0 28px;color:#F7F2EA}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* facts */
+.facts{background:var(--sand);border-bottom:1px solid var(--rule)}
+.facts dl{display:grid;grid-template-columns:repeat(4,1fr);margin:0;padding:34px 0}
+.facts div{padding:0 22px;border-left:1px solid var(--rule)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts dt{font-family:var(--serif);font-size:40px;line-height:1;color:var(--canyon-dark)}
+.facts dd{margin:8px 0 0;color:var(--ink-soft);font-size:15px;line-height:1.4}
+@media (max-width:760px){.facts dl{grid-template-columns:1fr 1fr;row-gap:26px}.facts div:nth-child(3){border-left:0;padding-left:0}}
+
+/* sections */
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:40px}
+.section-head h2{font-size:clamp(32px,4vw,48px)}
+.section-head p{margin-top:16px;color:var(--ink-soft);font-size:18px}
+
+.offices .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:start}
+.plazas{list-style:none;padding:0;margin:28px 0 32px;border-top:1px solid var(--rule)}
+.plazas li{border-bottom:1px solid var(--rule)}
+.plazas a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 2px;text-decoration:none;color:var(--ink)}
+.plazas a:hover h3{color:var(--terracotta)}
+.plazas h3{font-size:24px;transition:color .15s}
+.plazas span{font-size:14px;color:var(--ink-soft);white-space:nowrap}
+.checks{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:10px}
+.checks li{padding-left:28px;position:relative}
+.checks li::before{content:"";position:absolute;left:2px;top:.6em;width:12px;height:12px;border-radius:50%;background:var(--terracotta)}
+.photo-stack{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.photo-stack figure{margin:0}
+.photo-stack figure:first-child{grid-column:1 / -1}
+.photo-stack img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+.photo-stack figure:first-child img{aspect-ratio:4/3}
+.photo-stack figure:not(:first-child) img{aspect-ratio:1/1}
+figcaption{font-size:13px;color:var(--ink-soft);margin-top:8px}
+@media (max-width:900px){.offices .grid{grid-template-columns:1fr;gap:40px}}
+
+/* views */
+.views{background:var(--ink);color:#F1EBE2;padding:88px 0}
+.views .section-head h2{color:#fff}
+.views .section-head p{color:#CFC6BA}
+.views .strip{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px}
+.views .strip img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+.views .strip picture:first-child{grid-row:1 / 3}
+.views .more{margin-top:28px}
+.views a.btn-light{color:#fff}
+@media (max-width:760px){.views .strip{grid-template-columns:1fr 1fr;grid-template-rows:220px 160px 160px}.views .strip picture:first-child{grid-column:1 / -1;grid-row:auto}}
+
+/* storage */
+.storage{background:var(--sand)}
+.storage .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.unit{background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:36px}
+.unit h3{font-size:30px}
+.unit .where{color:var(--ink-soft);font-size:15px;margin:6px 0 20px}
+.unit ul{margin:0 0 28px;padding-left:20px}
+.unit li{margin-bottom:6px}
+.unit .btn{margin-right:8px;margin-bottom:8px}
+@media (max-width:820px){.storage .cols{grid-template-columns:1fr}.unit{padding:28px}}
+
+/* contact */
+.contact{padding:88px 0}
+.contact .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.contact h2{font-size:clamp(32px,4vw,46px)}
+.contact-list{display:grid;gap:18px;margin:0;font-size:18px}
+.contact-list dt{font-size:13px;color:var(--ink-soft);margin-bottom:2px}
+.contact-list dd{margin:0}
+.contact-list a{color:var(--ink);text-decoration-color:var(--terracotta);text-underline-offset:3px}
+@media (max-width:820px){.contact .grid{grid-template-columns:1fr;gap:32px}}
+
+footer{border-top:1px solid var(--rule);padding:28px 0;font-size:14px;color:var(--ink-soft)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--ink-soft)}
+
+.mobile-call{display:none}
+@media (max-width:640px){
+  .cb-long{display:none}
+  body{font-size:16px}
+  section{padding:64px 0}
+  .hero{min-height:620px}
+  .mobile-call{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;gap:10px}
+  .mobile-call a{flex:1;text-align:center;box-shadow:0 8px 24px rgba(35,33,31,.25)}
+  footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="concept-bar">Concept redesign by <a href="https://mylaunchpartner.ai">My Launch Partner</a><span class="cb-long">. This is a preview, not the official site. The current site is <a href="https://www.sedonaofficerentals.com/">sedonaofficerentals.com</a></span>.</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Sedona Office and Storage Rentals, home">
+      <strong>Sedona Office &amp; Storage Rentals</strong>
+      <span>M &amp; M Property Management Group, LLC</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="https://www.sedonaofficerentals.com/sedona-office-rental-listings.html">Office listings</a>
+      <a href="https://www.sedonaofficerentals.com/sedona-mini-storage-facilities.html">Storage</a>
+      <a href="https://www.sedonaofficerentals.com/img/views_from_offices/sedona-office-rental-views.html">Office views</a>
+      <a href="https://www.sedonaofficerentals.com/sedona-office-listings-map.html">Map</a>
+      <a href="https://www.sedonaofficerentals.com/about-sedona-office-rental-developers.html">About</a>
+      <a class="btn btn-primary" href="tel:+19282829748">Call (928) 282-9748</a>
+    </nav>
+    <details class="menu">
+      <summary aria-label="Open menu">Menu</summary>
+      <nav aria-label="Mobile">
+        <a href="https://www.sedonaofficerentals.com/sedona-office-rental-listings.html">Office listings</a>
+        <a href="https://www.sedonaofficerentals.com/sedona-mini-storage-facilities.html">Storage</a>
+        <a href="https://www.sedonaofficerentals.com/img/views_from_offices/sedona-office-rental-views.html">Office views</a>
+        <a href="https://www.sedonaofficerentals.com/sedona-office-listings-map.html">Map and directions</a>
+        <a href="https://www.sedonaofficerentals.com/about-sedona-office-rental-developers.html">About us</a>
+        <a href="https://www.sedonaofficerentals.com/about-sedona.html">About Sedona</a>
+        <a href="https://www.sedonaofficerentals.com/contact-sedona-office-rentals.html">Contact</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title" style="padding:0">
+    <picture>
+      <source type="image/webp" srcset="assets/img/hero-sedona-800.webp 800w, assets/img/hero-sedona-1400.webp 1400w, assets/img/hero-sedona-2400.webp 2400w" sizes="100vw">
+      <img src="assets/img/hero-sedona-1400.jpg" srcset="assets/img/hero-sedona-800.jpg 800w, assets/img/hero-sedona-1400.jpg 1400w, assets/img/hero-sedona-2400.jpg 2400w" sizes="100vw" alt="West Sedona at golden hour with Capitol Butte above the town" fetchpriority="high">
+    </picture>
+    <div class="wrap">
+      <h1 id="hero-title">Office space with red rock views</h1>
+      <p>Three professional office plazas and two storage facilities on SR 89A, in the heart of Sedona. Designed, built and managed by M&nbsp;&amp;&nbsp;M for over 34 years.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://www.sedonaofficerentals.com/sedona-office-rental-listings.html">See available offices</a>
+        <a class="btn btn-light" href="https://www.sedonaofficerentals.com/sedona-mini-storage-facilities.html">Explore storage</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="facts" aria-label="At a glance">
+    <div class="wrap">
+      <dl>
+        <div><dt>34+</dt><dd>years designing, building and managing Sedona rentals</dd></div>
+        <div><dt>40,000</dt><dd>square feet of office space for lease</dd></div>
+        <div><dt>3</dt><dd>professional office plazas</dd></div>
+        <div><dt>2</dt><dd>storage facilities with video security</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section class="offices" aria-labelledby="offices-title">
+    <div class="wrap grid">
+      <div>
+        <div class="section-head" style="margin-bottom:0">
+          <h2 id="offices-title">Professional offices built for the way you work</h2>
+          <p>Adobe office buildings on SR 89A, with award-winning architecture and landscaping, designed around how a professional practice actually runs.</p>
+        </div>
+        <ul class="plazas">
+          <li><a href="https://www.sedonaofficerentals.com/adobe-hilltop.html"><h3>Adobe Hilltop Plaza</h3><span>View plaza</span></a></li>
+          <li><a href="https://www.sedonaofficerentals.com/latierra1120-phase1.html"><h3>La Tierra Plaza 1120</h3><span>View plaza</span></a></li>
+          <li><a href="https://www.sedonaofficerentals.com/latierra1146.html"><h3>La Tierra Plaza 1146</h3><span>View plaza</span></a></li>
+        </ul>
+        <ul class="checks">
+          <li>Suited to medical, dental, executive and other professional offices</li>
+          <li>Covered parking for tenants, plus plenty of client parking</li>
+          <li>On-site property management and tenant services</li>
+          <li>Climate controlled storage also available</li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.sedonaofficerentals.com/sedona-office-rental-listings.html">See available offices</a>
+      </div>
+      <div class="photo-stack">
+        <figure>
+          <picture><source type="image/webp" srcset="assets/img/la-tierra-1120-red-rocks.webp"><img src="assets/img/la-tierra-1120-red-rocks.jpg" alt="La Tierra Plaza building with red rock formations behind it" loading="lazy" width="800" height="600"></picture>
+        </figure>
+        <figure>
+          <picture><source type="image/webp" srcset="assets/img/la-tierra-plaza-sign.webp"><img src="assets/img/la-tierra-plaza-sign.jpg" alt="La Tierra Plaza entrance sign with red rocks in the distance" loading="lazy" width="960" height="720"></picture>
+        </figure>
+        <figure>
+          <picture><source type="image/webp" srcset="assets/img/adobe-hilltop-plaza.webp"><img src="assets/img/adobe-hilltop-plaza.jpg" alt="Adobe Hilltop Plaza with landscaped grounds" loading="lazy" width="800" height="525"></picture>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="views" aria-labelledby="views-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="views-title">The view from the office</h2>
+        <p>Real photos taken from M &amp; M's plazas.</p>
+      </div>
+      <div class="strip">
+        <picture><source type="image/webp" srcset="assets/img/view-la-tierra-1120.webp"><img src="assets/img/view-la-tierra-1120.jpg" alt="View over La Tierra Plaza toward the red rocks" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="assets/img/view-adobe-hilltop.webp"><img src="assets/img/view-adobe-hilltop.jpg" alt="Red rock skyline seen from Adobe Hilltop Plaza" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="assets/img/view-solar-carports.webp"><img src="assets/img/view-solar-carports.jpg" alt="Solar-covered parking at the plaza with mountains beyond" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="assets/img/view-carport-red-rocks.webp"><img src="assets/img/view-carport-red-rocks.jpg" alt="Solar carport with red rocks on the horizon" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="assets/img/view-la-tierra-1120-parking.webp"><img src="assets/img/view-la-tierra-1120-parking.jpg" alt="Covered tenant parking at La Tierra Plaza" loading="lazy"></picture>      </div>
+      <div class="more"><a class="btn btn-light" href="https://www.sedonaofficerentals.com/img/views_from_offices/sedona-office-rental-views.html">See all office views</a></div>
+    </div>
+  </section>
+
+  <section class="storage" aria-labelledby="storage-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="storage-title">Storage in the center of Sedona</h2>
+        <p>Two secure facilities near SR 89A, for household, business and temperature-sensitive storage.</p>
+      </div>
+      <div class="cols">
+        <article class="unit">
+          <h3>Sedona Climate Controlled Storage</h3>
+          <p class="where">On SR 89A, Sedona</p>
+          <ul>
+            <li>Temperature controlled for art, wine and other sensitive items</li>
+            <li>Elevator for easy access</li>
+            <li>24-hour video security</li>
+          </ul>
+          <a class="btn btn-outline" href="https://www.sedonaofficerentals.com/sedona-mini-storage-facilities.html">See unit details</a>
+        </article>
+        <article class="unit">
+          <h3>Sedona Self Storage</h3>
+          <p class="where">Near SR 89A, central Sedona</p>
+          <ul>
+            <li>Units from 4' × 4' up to 8' × 40'</li>
+            <li>Gated property</li>
+            <li>On-site property manager</li>
+          </ul>
+          <a class="btn btn-primary" href="tel:+19282824773">Call (928) 282-4773</a>
+          <a class="btn btn-outline" href="https://www.sedonaofficerentals.com/sedona-mini-storage-facilities.html">See unit details</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="contact-title">
+    <div class="wrap grid">
+      <div>
+        <h2 id="contact-title">Talk to the people who built it</h2>
+        <p style="margin-top:16px;color:var(--ink-soft);font-size:18px;max-width:46ch">Ask about current availability, tour a space, or find the right storage unit.</p>
+        <a class="btn btn-outline" href="https://www.sedonaofficerentals.com/sedona-office-listings-map.html">Map and directions</a>
+      </div>
+      <dl class="contact-list">
+        <div><dt>Office rentals</dt><dd><a href="tel:+19282829748">(928) 282-9748</a></dd></div>
+        <div><dt>Sedona Self Storage</dt><dd><a href="tel:+19282824773">(928) 282-4773</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:mmsedona@gmail.com">mmsedona@gmail.com</a></dd></div>
+        <div><dt>Office</dt><dd>1120 W. SR 89A, Ste. A2<br>Sedona, Arizona 86336</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© M &amp; M Property Management Group, LLC</span>
+    <span>Concept redesign by <a href="https://mylaunchpartner.ai">My Launch Partner</a>. Hero photo licensed via Envato.</span>
+  </div>
+</footer>
+
+<div class="mobile-call">
+  <a class="btn btn-primary" href="tel:+19282829748">Call offices</a>
+  <a class="btn btn-outline" style="background:#fff" href="https://www.sedonaofficerentals.com/sedona-office-rental-listings.html">Listings</a>
+</div>
+
+</body>
+</html>
