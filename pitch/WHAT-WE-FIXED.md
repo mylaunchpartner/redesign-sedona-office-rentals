@@ -15,3 +15,13 @@ A homepage concept by My Launch Partner. All facts come from the current sedonao
 **Modern, accessible build.** The current site was built in Microsoft FrontPage 4.0. Its menu is made of pictures of words, which screen readers and Google can't read, and none of its 11 images have descriptions. The new page uses real text navigation, described images, readable type sizes and fast, compressed photos.
 
 **Same business, refreshed look.** The color palette keeps the site's original sky blue, deepened, alongside Sedona's terracotta and sandstone, so it still feels like M & M.
+
+## Inside pages: office listings and a single listing
+
+**Listings you can compare at a glance.** Each space now has a large photo, its address, a two-line summary and the same four facts in the same spot: available size, building size, property type and price. Owners can compare spaces without reading every word.
+
+**The listing page sells the space.** The Sedona Executive Offices page opens on its best photo, an office with doors open to a red-rock patio. A tap-through gallery replaces the old "enlarge / back / next" slideshow, and the suite sizes sit in a clean table with the flyer one tap away.
+
+**Questions answered before they're asked.** Shared restroom, how utilities are billed, and furnished or unfurnished are pulled out into a short "Good to know" list instead of being buried in a paragraph.
+
+**Always a way to reach M & M.** A contact panel stays beside the listing with call, email and flyer buttons. On phones, a call bar stays at the bottom of the screen.
